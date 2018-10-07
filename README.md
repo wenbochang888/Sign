@@ -24,3 +24,7 @@ SpringBoot，MyBatis，HttpClient，Jsoup等等，非常感谢开源社区做的
 
 - 拉上最上面，随便选择一个即可，然后里面有一个cookie的参数，将里面的内容复制出来即可。cookie：不要复制，从TIEBA开始
 
+![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/network.jpg)
+
+![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/cookie.jpg)
+
