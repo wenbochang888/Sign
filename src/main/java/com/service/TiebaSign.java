@@ -33,6 +33,7 @@ public class TiebaSign implements Runnable {
 	}
 
 	public String getCookie(String username) {
+
 		return dao.select(username);
 	}
 
@@ -74,7 +75,7 @@ public class TiebaSign implements Runnable {
 			if (flag) {
 				// 插入到数据库中
 				String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
-				dao.insertRecord(username, title, date, "签到失败");
+				dao.insertRecord(username, title, date, "已签到");
 			}
 		}
 	}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h3 th:if="${msg != null}" class="alert alert-info" th:text="${msg}"></h3>
+
+<div class="container">
+    <form action="/check" method="post" id="usrform">
+        <h2>登录</h2>
+        <input type="text" name="username" class="form-control" placeholder="用户名"><br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">submit</button>
+    </form>
+    <textarea  rows="10" cols="60" name="cookie" form="usrform" placeholder="请输入cookies"></textarea>
+</div>
+
+</body>
+</html>

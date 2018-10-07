@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Info</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="panel panel-info">
+        <div class="panel-heading text-center">
+            <h2>签到详情页</h2>
+        </div>
+        <div class="panel-body">
+            <table class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                    <th class="col-md-1 text-center">用户名</th>
+                    <th class="col-md-1 text-center">贴吧</th>
+                    <th class="col-md-1 text-center">签到时间</th>
+                    <th class="col-md-1 text-center">签到状态</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="user : ${res}">
+                    <th th:text="${user.username}" class="col-md-1 text-center"></th>
+                    <th th:text="${user.title}" class="col-md-1 text-center"></th>
+                    <th th:text="${user.date}" class="col-md-1 text-center"></th>
+                    <th th:text="${user.info}" class="col-md-1 text-center"></th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
