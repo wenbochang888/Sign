@@ -4,9 +4,9 @@
 
 ## 项目使用开源技术
 
-SpringBoot，MyBatis，HttpClient，Jsoup等等，非常感谢开源社区做的贡献
+SpringBoot，MyBatis，HttpClient，Jsoup等等，感谢开源社区做的贡献
 
-## 项目思路介绍
+## 用户名和cookies的获取
 
 此项目需要用户提供两个参数，一个为用户名，一个为登录贴吧的cookies
 
@@ -24,7 +24,27 @@ SpringBoot，MyBatis，HttpClient，Jsoup等等，非常感谢开源社区做的
 
 - 拉上最上面，随便选择一个即可，然后里面有一个cookie的参数，将里面的内容复制出来即可。cookie：不要复制，从TIEBA开始
 
-![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/network.jpg)
+- ![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/network.jpg)
 
-![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/cookie.jpg)
+- ![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/cookie.jpg)
+
+ps. 本人绝不会拿cookies做任何事情，仅用于签到，如不信任，请不要暴露cookies
+
+## 项目思路介绍
+
+- 首先获取用户的cookies，并且存入MySQL数据库中
+
+- 用户名和cookies在MySQL中一一对应
+
+- 然后根据cookies获取用户的所用贴吧
+
+- 如果已经签到则返回失败，如果没有签到则帮其自动发送post签到
+
+- 在凌晨零点进行签到用到了Spring提供的cron注解
+
+- 你可以用用户名来实时查看你的签到情况
+
+## 项目展示
+
+- ![Image text](https://github.com/wenbochang888/Sign/blob/master/src/img/show1.jpg)
 
