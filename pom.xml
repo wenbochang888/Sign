@@ -6,7 +6,7 @@
     <groupId>com.tieba</groupId>
     <artifactId>sign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>sign</name>
     <description>Demo project for Spring Boot</description>
@@ -64,12 +64,12 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- 关闭默认tomcat
+        <!-- 关闭默认tomcat-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
-        </dependency>-->
+        </dependency>
     </dependencies>
 
     <build>
