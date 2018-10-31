@@ -10,7 +10,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class SignApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
-
+		String ss = "ss";
+		System.out.println(ss);
 		SpringApplication.run(SignApplication.class, args);
 	}
 
