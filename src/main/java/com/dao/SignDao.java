@@ -36,6 +36,6 @@ public interface SignDao {
 	                  @Param("date") String date,
 	                  @Param("info") String info);
 
-	@Select(value = "SELECT * FROM record WHERE username = #{username}")
+	@Select(value = "SELECT * FROM record WHERE username = #{username} ORDER BY date DESC LIMIT 225")
 	List<Record> selectRecord(@Param("username") String username);
 }
