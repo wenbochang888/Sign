@@ -10,5 +10,6 @@ public class SignApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SignApplication.class, args);
+		System.out.println("this is a test");
 	}
 }

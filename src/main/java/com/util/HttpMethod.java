@@ -15,6 +15,7 @@ import org.springframework.stereotype.Component;
 public class HttpMethod {
 
 	public String get(String url, String cookies) {
+		System.out.println("this is another test");
 		HttpConfig config = getConfig(cookies);
 		String content = null;
 		try {
