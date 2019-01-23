@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <!--定义变量-->
+    <property name="APP_NAME" value="sign"/>
+    <timestamp key="TIMESTAMP" datePattern="yyyy-MM-dd"/>
+
+    <!-- 输出到控制台 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{40} - [%X{SPECIAL_INFO}] - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- 输出到文件 文件大于100KB 重新生成一个文件 生成五个文件后打包 -->
+    <appender name="fileLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>sign.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>sign.%i.log.zip</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>5</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>100KB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>
+                %date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{40} - [%X{SPECIAL_INFO}] - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <!-- 这里一定要指向name -->
+    <root level="INFO">
+        <appender-ref ref="fileLog"/>
+        <appender-ref ref="stdout"/>
+    </root>
+
+</configuration>

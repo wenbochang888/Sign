@@ -2,6 +2,7 @@ package com.service;
 
 import com.dao.SignDao;
 import com.util.HttpMethod;
+import lombok.extern.slf4j.Slf4j;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -19,6 +20,7 @@ import java.util.List;
  * @Date: 2018/10/3
  */
 @Service
+@Slf4j
 public class TiebaSign implements Runnable {
 
 	@Autowired
@@ -68,6 +70,7 @@ public class TiebaSign implements Runnable {
 					// 插入到数据库中
 					String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
 					dao.insertRecord(username, title, date, "签到成功");
+					log.info(username + "---" + title + "---" + "签到成功");
 					flag = false;
 					break;
 				}
@@ -76,6 +79,7 @@ public class TiebaSign implements Runnable {
 				// 插入到数据库中
 				String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
 				dao.insertRecord(username, title, date, "已签到");
+				log.warn(username + "---" + title + "---" + "已签到");
 			}
 		}
 	}
