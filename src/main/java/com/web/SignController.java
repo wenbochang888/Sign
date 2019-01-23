@@ -59,7 +59,7 @@ public class SignController {
 	}
 
 	@ResponseBody
-	@RequestMapping(value = "/sign", method = RequestMethod.POST)
+	@RequestMapping(value = "/sign")
 	public String sign(@RequestParam("username") String username) {
 		if (check.checkUseName(username) == null) {
 			return "请检查用户名是否有误，请重新输入";
