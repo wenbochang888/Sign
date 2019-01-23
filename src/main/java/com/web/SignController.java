@@ -34,7 +34,7 @@ public class SignController {
 	@RequestMapping("/")
 	public String index() {
 
-		return "login";
+		return "/login";
 	}
 
 	@RequestMapping(value = "/check", method = RequestMethod.POST)
