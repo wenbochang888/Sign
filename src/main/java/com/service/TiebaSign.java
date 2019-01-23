@@ -22,9 +22,9 @@ import java.util.List;
 public class TiebaSign implements Runnable {
 
 	@Autowired
-	SignDao dao;
+	private SignDao dao;
 	@Autowired
-	HttpMethod http;
+	private HttpMethod http;
 
 	String username = null;
 

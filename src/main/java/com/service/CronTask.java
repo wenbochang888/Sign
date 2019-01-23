@@ -17,9 +17,9 @@ import java.util.concurrent.Executors;
 public class CronTask  {
 
 	@Autowired
-	SignDao dao;
+	private SignDao dao;
 	@Autowired
-	TiebaSign sign;
+	private TiebaSign sign;
 
 	@Scheduled(cron = "0 0 0 * * ?")
 	public void cronTask() {

@@ -15,7 +15,7 @@ import java.util.List;
 public class UseCheck {
 
 	@Autowired
-	SignDao dao;
+	private SignDao dao;
 
 	public List<Record> selectRecord(String username) {
 

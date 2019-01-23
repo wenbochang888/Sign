@@ -13,10 +13,9 @@ import org.springframework.stereotype.Service;
 public class CookieCheckService {
 
 	@Autowired
-	HttpMethod httpMethod;
-
+	private HttpMethod httpMethod;
 	@Autowired
-	SignDao dao;
+	private SignDao dao;
 
 	public boolean check(String cookie, String username) {
 		String url = "http://tieba.baidu.com/mo/";

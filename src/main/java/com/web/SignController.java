@@ -25,11 +25,11 @@ import java.util.Map;
 public class SignController {
 
 	@Autowired
-	TiebaSign sign;
+	private TiebaSign sign;
 	@Autowired
-	CookieCheckService cookieCheckService;
+	private CookieCheckService cookieCheckService;
 	@Autowired
-	UseCheck check;
+	private UseCheck check;
 
 	@RequestMapping("/")
 	public String index() {
