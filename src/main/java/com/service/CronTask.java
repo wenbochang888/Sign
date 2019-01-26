@@ -21,7 +21,7 @@ public class CronTask  {
 	@Autowired
 	private TiebaSign sign;
 
-	@Scheduled(cron = "0 0 0 * * ?")
+	@Scheduled(cron = "0 0,30 0 * * ?")
 	public void cronTask() {
 		List<String> users = dao.selectAllUse();
 		ExecutorService service = Executors.newCachedThreadPool();
