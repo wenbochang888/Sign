@@ -51,6 +51,7 @@ public class TiebaSign implements Runnable {
 		content = http.get(links, cookie);
 		List<String> likesLink = getLike(content);
 		sign(likesLink, cookie, username);
+		log.warn("==============所有贴吧签到完成==============");
 	}
 
 	private void sign(List<String> likesLink, String cookie, String username) {
