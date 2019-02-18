@@ -1,0 +1,227 @@
+2019-01-26 16:35:41.681 [main] INFO  com.SignApplication - [] - Starting SignApplication on DESKTOP-5B6KGDA with PID 5792 (E:\workspace\sign\target\classes started by yizhen in E:\workspace\sign)
+2019-01-26 16:35:41.687 [main] INFO  com.SignApplication - [] - No active profile set, falling back to default profiles: default
+2019-01-26 16:35:41.790 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d9e68d0: startup date [Sat Jan 26 16:35:41 CST 2019]; root of context hierarchy
+2019-01-26 16:35:49.500 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - [] - Tomcat initialized with port(s): 8081 (http)
+2019-01-26 16:35:49.542 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - [] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-01-26 16:35:49.558 [main] INFO  org.apache.catalina.core.StandardService - [] - Starting service [Tomcat]
+2019-01-26 16:35:49.559 [main] INFO  org.apache.catalina.core.StandardEngine - [] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-01-26 16:35:49.570 [localhost-startStop-1] INFO  o.a.catalina.core.AprLifecycleListener - [] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\yizhen\AppData\Local\Microsoft\WindowsApps;F:\QuickMethod;;.]
+2019-01-26 16:35:49.699 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - [] - Initializing Spring embedded WebApplicationContext
+2019-01-26 16:35:49.699 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - [] - Root WebApplicationContext: initialization completed in 7909 ms
+2019-01-26 16:35:49.960 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - [] - Servlet dispatcherServlet mapped to [/]
+2019-01-26 16:35:49.966 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-26 16:35:49.967 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-26 16:35:49.967 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-01-26 16:35:49.968 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-26 16:35:50.699 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 16:35:51.090 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - [] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d9e68d0: startup date [Sat Jan 26 16:35:41 CST 2019]; root of context hierarchy
+2019-01-26 16:35:51.161 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/]}" onto public java.lang.String com.web.SignController.index()
+2019-01-26 16:35:51.164 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/check],methods=[POST]}" onto public java.lang.String com.web.SignController.check(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-26 16:35:51.165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/sign]}" onto public java.lang.String com.web.SignController.sign(java.lang.String)
+2019-01-26 16:35:51.165 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/{username}],methods=[GET]}" onto public java.lang.String com.web.SignController.selectRecord(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2019-01-26 16:35:51.170 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-01-26 16:35:51.171 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-01-26 16:35:51.203 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 16:35:51.203 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-01-26 16:35:51.223 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [] - Detected @ExceptionHandler methods in exceptionController
+2019-01-26 16:35:51.271 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [] - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-01-26 16:35:51.761 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Registering beans for JMX exposure on startup
+2019-01-26 16:35:51.763 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-01-26 16:35:51.769 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-01-26 16:35:51.784 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - [] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-01-26 16:35:51.839 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - [] - Starting ProtocolHandler ["http-nio-8081"]
+2019-01-26 16:35:51.850 [main] INFO  o.apache.tomcat.util.net.NioSelectorPool - [] - Using a shared selector for servlet write/read
+2019-01-26 16:35:51.868 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - [] - Tomcat started on port(s): 8081 (http) with context path ''
+2019-01-26 16:35:51.874 [main] INFO  com.SignApplication - [] - Started SignApplication in 11.783 seconds (JVM running for 17.074)
+2019-02-18 16:53:59.599 [main] INFO  com.SignApplication - [] - Starting SignApplication on DESKTOP-5B6KGDA with PID 3908 (E:\workspace\sign\target\classes started by yizhen in E:\workspace\sign)
+2019-02-18 16:53:59.655 [main] INFO  com.SignApplication - [] - No active profile set, falling back to default profiles: default
+2019-02-18 16:53:59.791 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - [] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@158da8e: startup date [Mon Feb 18 16:53:59 CST 2019]; root of context hierarchy
+2019-02-18 16:54:03.770 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - [] - Tomcat initialized with port(s): 8081 (http)
+2019-02-18 16:54:03.786 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - [] - Initializing ProtocolHandler ["http-nio-8081"]
+2019-02-18 16:54:03.800 [main] INFO  org.apache.catalina.core.StandardService - [] - Starting service [Tomcat]
+2019-02-18 16:54:03.800 [main] INFO  org.apache.catalina.core.StandardEngine - [] - Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-02-18 16:54:03.807 [localhost-startStop-1] INFO  o.a.catalina.core.AprLifecycleListener - [] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Program Files\Java\jdk1.8.0_131\bin;C:\Users\yizhen\AppData\Local\Microsoft\WindowsApps;F:\QuickMethod;;.]
+2019-02-18 16:54:03.941 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - [] - Initializing Spring embedded WebApplicationContext
+2019-02-18 16:54:03.942 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - [] - Root WebApplicationContext: initialization completed in 4151 ms
+2019-02-18 16:54:04.076 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - [] - Servlet dispatcherServlet mapped to [/]
+2019-02-18 16:54:04.080 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-02-18 16:54:04.081 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-02-18 16:54:04.081 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-02-18 16:54:04.081 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - [] - Mapping filter: 'requestContextFilter' to: [/*]
+2019-02-18 16:54:04.429 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-18 16:54:04.648 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - [] - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@158da8e: startup date [Mon Feb 18 16:53:59 CST 2019]; root of context hierarchy
+2019-02-18 16:54:04.713 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/]}" onto public java.lang.String com.web.SignController.index()
+2019-02-18 16:54:04.716 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/check],methods=[POST]}" onto public java.lang.String com.web.SignController.check(java.lang.String,java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-18 16:54:04.716 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/sign]}" onto public java.lang.String com.web.SignController.sign(java.lang.String)
+2019-02-18 16:54:04.717 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/{username}],methods=[GET]}" onto public java.lang.String com.web.SignController.selectRecord(java.lang.String,java.util.Map<java.lang.String, java.lang.Object>)
+2019-02-18 16:54:04.720 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-02-18 16:54:04.720 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - [] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-02-18 16:54:04.755 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-18 16:54:04.755 [main] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - [] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-02-18 16:54:04.771 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - [] - Detected @ExceptionHandler methods in exceptionController
+2019-02-18 16:54:04.821 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [] - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-02-18 16:54:05.137 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Registering beans for JMX exposure on startup
+2019-02-18 16:54:05.139 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-02-18 16:54:05.146 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - [] - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2019-02-18 16:54:05.159 [main] INFO  o.s.s.a.ScheduledAnnotationBeanPostProcessor - [] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-02-18 16:54:05.168 [main] INFO  o.apache.coyote.http11.Http11NioProtocol - [] - Starting ProtocolHandler ["http-nio-8081"]
+2019-02-18 16:54:05.180 [main] INFO  o.apache.tomcat.util.net.NioSelectorPool - [] - Using a shared selector for servlet write/read
+2019-02-18 16:54:05.201 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer - [] - Tomcat started on port(s): 8081 (http) with context path ''
+2019-02-18 16:54:05.205 [main] INFO  com.SignApplication - [] - Started SignApplication in 6.259 seconds (JVM running for 8.468)
+2019-02-18 16:54:46.378 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - [] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-02-18 16:54:46.378 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - [] - FrameworkServlet 'dispatcherServlet': initialization started
+2019-02-18 16:54:46.406 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - [] - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-02-18 16:54:46.472 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Starting...
+2019-02-18 16:54:46.921 [http-nio-8081-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - [] - HikariPool-1 - Start completed.
+2019-02-18 16:54:48.957 [Thread-21] WARN  com.service.TiebaSign - [] - wenber---广东商学院---已签到
+2019-02-18 16:54:50.755 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---广州97中---签到成功
+2019-02-18 16:54:52.446 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高考---签到成功
+2019-02-18 16:54:52.946 [Thread-22] WARN  com.service.TiebaSign - [] - wenber---广东商学院---已签到
+2019-02-18 16:54:53.451 [Thread-22] WARN  com.service.TiebaSign - [] - wenber---广州97中---已签到
+2019-02-18 16:54:53.971 [Thread-22] WARN  com.service.TiebaSign - [] - wenber---高考---已签到
+2019-02-18 16:54:54.047 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---海贼王---签到成功
+2019-02-18 16:54:54.486 [Thread-22] WARN  com.service.TiebaSign - [] - wenber---海贼王---已签到
+2019-02-18 16:54:56.075 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---95年第一次枪钱---签到成功
+2019-02-18 16:54:56.158 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---95年第一次枪钱---签到成功
+2019-02-18 16:54:57.625 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---mt27i---签到成功
+2019-02-18 16:54:57.789 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---mt27i---签到成功
+2019-02-18 16:54:59.182 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---华为荣耀6---签到成功
+2019-02-18 16:54:59.268 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---华为荣耀6---签到成功
+2019-02-18 16:55:00.620 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高中数学---签到成功
+2019-02-18 16:55:00.847 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高中数学---签到成功
+2019-02-18 16:55:02.316 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---广东卷---签到成功
+2019-02-18 16:55:02.367 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---广东卷---签到成功
+2019-02-18 16:55:03.769 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---数据流量---签到成功
+2019-02-18 16:55:03.875 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---数据流量---签到成功
+2019-02-18 16:55:05.732 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---数学竞赛---签到成功
+2019-02-18 16:55:05.808 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---数学竞赛---签到成功
+2019-02-18 16:55:07.831 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---c语言---签到成功
+2019-02-18 16:55:08.141 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---c语言---签到成功
+2019-02-18 16:55:09.464 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---计算机科学与技术---签到成功
+2019-02-18 16:55:09.565 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---计算机科学与技术---签到成功
+2019-02-18 16:55:11.226 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---跑跑卡丁车---签到成功
+2019-02-18 16:55:11.471 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---跑跑卡丁车---签到成功
+2019-02-18 16:55:12.807 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---跑跑道具---签到成功
+2019-02-18 16:55:12.823 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---跑跑道具---签到成功
+2019-02-18 16:55:14.233 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---java---签到成功
+2019-02-18 16:55:14.405 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---java---签到成功
+2019-02-18 16:55:16.144 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---acm---签到成功
+2019-02-18 16:55:16.272 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---acm---签到成功
+2019-02-18 16:55:17.659 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---中山---签到成功
+2019-02-18 16:55:17.680 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---中山---签到成功
+2019-02-18 16:55:19.064 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---大学---签到成功
+2019-02-18 16:55:19.273 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---大学---签到成功
+2019-02-18 16:55:20.650 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---广州大学---签到成功
+2019-02-18 16:55:20.727 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---广州大学---签到成功
+2019-02-18 16:55:22.151 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---夏末的蒲公英---签到成功
+2019-02-18 16:55:22.296 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---夏末的蒲公英---签到成功
+2019-02-18 16:55:23.835 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---桌子板凳都算啥---签到成功
+2019-02-18 16:55:23.999 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---桌子板凳都算啥---签到成功
+2019-02-18 16:55:25.384 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---dota---签到成功
+2019-02-18 16:55:25.512 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---dota---签到成功
+2019-02-18 16:55:26.788 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---搭配---签到成功
+2019-02-18 16:55:26.929 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---搭配---签到成功
+2019-02-18 16:55:28.239 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---数学---签到成功
+2019-02-18 16:55:28.285 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---数学---签到成功
+2019-02-18 16:55:30.135 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---lbe---签到成功
+2019-02-18 16:55:30.157 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---lbe---签到成功
+2019-02-18 16:55:31.522 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---励志---签到成功
+2019-02-18 16:55:31.827 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---励志---签到成功
+2019-02-18 16:55:33.115 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---windows10---签到成功
+2019-02-18 16:55:33.158 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---windows10---签到成功
+2019-02-18 16:55:34.528 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高中生物---签到成功
+2019-02-18 16:55:34.686 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高中生物---签到成功
+2019-02-18 16:55:36.042 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---化学竞赛---签到成功
+2019-02-18 16:55:36.186 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---化学竞赛---签到成功
+2019-02-18 16:55:37.542 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---遇见未知的自己---签到成功
+2019-02-18 16:55:37.748 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---遇见未知的自己---签到成功
+2019-02-18 16:55:39.457 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高中物理---签到成功
+2019-02-18 16:55:39.475 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高中物理---签到成功
+2019-02-18 16:55:41.247 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高三---签到成功
+2019-02-18 16:55:41.427 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高三---签到成功
+2019-02-18 16:55:43.047 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---京东商城---签到成功
+2019-02-18 16:55:43.125 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---京东商城---签到成功
+2019-02-18 16:55:44.438 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---诛仙---签到成功
+2019-02-18 16:55:44.566 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---诛仙---签到成功
+2019-02-18 16:55:45.872 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---华南理工大学---签到成功
+2019-02-18 16:55:46.118 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---华南理工大学---签到成功
+2019-02-18 16:55:47.875 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---斗破苍穹---签到成功
+2019-02-18 16:55:47.903 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---斗破苍穹---签到成功
+2019-02-18 16:55:49.398 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高二---签到成功
+2019-02-18 16:55:49.518 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高二---签到成功
+2019-02-18 16:55:50.905 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---笔记本---签到成功
+2019-02-18 16:55:51.115 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---笔记本---签到成功
+2019-02-18 16:55:52.472 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---陆雪琪---签到成功
+2019-02-18 16:55:52.548 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---陆雪琪---签到成功
+2019-02-18 16:55:53.858 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---火影忍者---签到成功
+2019-02-18 16:55:54.093 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---火影忍者---签到成功
+2019-02-18 16:55:55.498 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---爆照---签到成功
+2019-02-18 16:55:55.566 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---爆照---签到成功
+2019-02-18 16:55:56.916 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高一---签到成功
+2019-02-18 16:55:57.107 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高一---签到成功
+2019-02-18 16:55:58.511 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---英语---签到成功
+2019-02-18 16:55:58.604 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---英语---签到成功
+2019-02-18 16:56:00.146 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---物理竞赛---签到成功
+2019-02-18 16:56:00.380 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---物理竞赛---签到成功
+2019-02-18 16:56:01.805 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---小米---签到成功
+2019-02-18 16:56:01.833 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---小米---签到成功
+2019-02-18 16:56:03.258 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---中山大学---签到成功
+2019-02-18 16:56:03.446 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---中山大学---签到成功
+2019-02-18 16:56:04.739 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高中语文---签到成功
+2019-02-18 16:56:04.903 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高中语文---签到成功
+2019-02-18 16:56:06.316 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---android开发---签到成功
+2019-02-18 16:56:06.321 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---android开发---签到成功
+2019-02-18 16:56:07.666 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---xposed框架---签到成功
+2019-02-18 16:56:07.837 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---xposed框架---签到成功
+2019-02-18 16:56:09.561 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---生物---签到成功
+2019-02-18 16:56:09.638 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---生物---签到成功
+2019-02-18 16:56:10.959 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---无线网络---签到成功
+2019-02-18 16:56:11.313 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---无线网络---签到成功
+2019-02-18 16:56:12.610 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---动漫---签到成功
+2019-02-18 16:56:12.760 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---动漫---签到成功
+2019-02-18 16:56:14.436 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---乃巴---签到成功
+2019-02-18 16:56:14.619 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---乃巴---签到成功
+2019-02-18 16:56:16.000 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---惠州华中---签到成功
+2019-02-18 16:56:16.183 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---惠州华中---签到成功
+2019-02-18 16:56:17.676 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---柯南---签到成功
+2019-02-18 16:56:17.726 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---柯南---签到成功
+2019-02-18 16:56:19.097 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---春节晚会---签到成功
+2019-02-18 16:56:19.717 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---春节晚会---签到成功
+2019-02-18 16:56:20.652 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---数列---签到成功
+2019-02-18 16:56:21.021 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---数列---签到成功
+2019-02-18 16:56:22.660 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---非你莫属---签到成功
+2019-02-18 16:56:22.668 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---非你莫属---签到成功
+2019-02-18 16:56:24.658 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---当当网---签到成功
+2019-02-18 16:56:24.888 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---当当网---签到成功
+2019-02-18 16:56:27.990 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---我要上首页---签到成功
+2019-02-18 16:56:28.105 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---我要上首页---签到成功
+2019-02-18 16:56:29.802 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---root---签到成功
+2019-02-18 16:56:29.974 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---root---签到成功
+2019-02-18 16:56:31.678 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---高中化学---签到成功
+2019-02-18 16:56:31.748 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---高中化学---签到成功
+2019-02-18 16:56:33.482 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---物理---签到成功
+2019-02-18 16:56:33.697 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---物理---签到成功
+2019-02-18 16:56:35.110 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---磨铁中文网---签到成功
+2019-02-18 16:56:35.136 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---磨铁中文网---签到成功
+2019-02-18 16:56:36.911 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---小清新电影---签到成功
+2019-02-18 16:56:37.098 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---小清新电影---签到成功
+2019-02-18 16:56:38.447 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---文学---签到成功
+2019-02-18 16:56:38.778 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---文学---签到成功
+2019-02-18 16:56:40.087 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---音乐---签到成功
+2019-02-18 16:56:40.149 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---音乐---签到成功
+2019-02-18 16:56:41.759 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---油色子---签到成功
+2019-02-18 16:56:42.050 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---油色子---签到成功
+2019-02-18 16:56:43.443 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---生物竞赛---签到成功
+2019-02-18 16:56:43.606 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---生物竞赛---签到成功
+2019-02-18 16:56:44.910 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---股票---签到成功
+2019-02-18 16:56:45.080 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---股票---签到成功
+2019-02-18 16:56:46.732 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---复读---签到成功
+2019-02-18 16:56:46.873 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---复读---签到成功
+2019-02-18 16:56:48.242 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---snapseed---签到成功
+2019-02-18 16:56:48.355 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---snapseed---签到成功
+2019-02-18 16:56:49.711 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---百度网盘---签到成功
+2019-02-18 16:56:49.812 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---百度网盘---签到成功
+2019-02-18 16:56:51.195 [Thread-21] INFO  com.service.TiebaSign - [] - wenber---深圳大学---签到成功
+2019-02-18 16:56:51.196 [Thread-21] WARN  com.service.TiebaSign - [] - ==============所有贴吧签到完成==============
+2019-02-18 16:56:51.353 [Thread-22] INFO  com.service.TiebaSign - [] - wenber---深圳大学---签到成功
+2019-02-18 16:56:51.353 [Thread-22] WARN  com.service.TiebaSign - [] - ==============所有贴吧签到完成==============

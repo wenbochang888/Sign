@@ -20,7 +20,6 @@ public class ExceptionController {
 	@ExceptionHandler
 	public String exceptionError(Throwable throwable, HttpServletRequest request) {
 		String url = request.getRequestURL().toString();
-		Enumeration<String> attributeNames = request.getAttributeNames();
 		StringBuilder headers = new StringBuilder();
 		Enumeration<String> headerNames = request.getHeaderNames();
 		while (headerNames.hasMoreElements()) {
