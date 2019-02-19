@@ -92,7 +92,7 @@ public class TiebaSign implements Runnable {
 		for (Element link : links) {
 			String res = link.attr("href");
 			if (res.contains("kw")) {
-				list.add("http://tieba.baidu.com/mo/q---6565E40E80DB731D240253D11B58F0F0%3AFG%3D1--1-3-0--2--wapp_1538480831269_864/" + res);
+				list.add("http://tieba.baidu.com/mo/q---3339B9B19C4A0F1EDC3A6232B76275FD%3AFG%3D1--1-3-0--2--wapp_1550479814077_11/" + res);
 			}
 		}
 		return list;
