@@ -3,6 +3,7 @@ package com.service;
 import com.dao.SignDao;
 import com.util.HttpMethod;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -13,7 +14,9 @@ import org.springframework.stereotype.Service;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Auther: Chang
@@ -28,6 +31,10 @@ public class TiebaSign implements Runnable {
 	@Autowired
 	private HttpMethod http;
 
+	private Map<String, String> map = new HashMap<>();
+
+	private static final String COOKIE = "cookie";
+
 	String username = null;
 
 	public void setUsername(String username) {
@@ -35,8 +42,13 @@ public class TiebaSign implements Runnable {
 	}
 
 	public String getCookie(String username) {
-
-		return dao.select(username);
+		String cookie = null;
+		if (StringUtils.isEmpty(map.get(COOKIE))) {
+			cookie = dao.select(username);
+			map.put(COOKIE, cookie);
+		}
+		cookie = map.get(COOKIE);
+		return cookie;
 	}
 
 	public void execute(String username) {
