@@ -41,10 +41,6 @@ public class IPBlockInterceptor implements HandlerInterceptor {
 			log.error("请求头有问题，拦截 ==> User-Agent = {}", header);
 			return false;
 		}
-		if (!header.contains(wechatMessage)) {
-			log.error("请求头有问题，拦截 ==> User-Agent = {}", header);
-			return false;
-		}
 		return true;
 	}
 

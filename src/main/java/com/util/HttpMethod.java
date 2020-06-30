@@ -4,6 +4,7 @@ import com.arronlong.httpclientutil.HttpClientUtil;
 import com.arronlong.httpclientutil.common.HttpConfig;
 import com.arronlong.httpclientutil.common.HttpHeader;
 import com.arronlong.httpclientutil.exception.HttpProcessException;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Header;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Component;
  * @Date: 2018/10/3
  */
 @Component
+@Slf4j
 public class HttpMethod {
 
 	public String get(String url, String cookies) {
@@ -20,7 +22,7 @@ public class HttpMethod {
 		try {
 			content = HttpClientUtil.get(config.url(url));
 		} catch (HttpProcessException e) {
-			e.printStackTrace();
+			log.error("http 报错 = {}", e);
 		}
 		return content;
 	}

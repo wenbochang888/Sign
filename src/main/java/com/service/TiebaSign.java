@@ -56,11 +56,17 @@ public class TiebaSign implements Runnable {
 		String cookie = getCookie(username);
 		// 获取首页html内容
 		String content = http.get("http://tieba.baidu.com/mo/", cookie);
+		log.info("content = {}", content);
 		// 获取所有连接
 		String links = getMore(content);
+		log.info("links = {}", links);
+		if (StringUtils.isEmpty(links)) {
+			return;
+		}
 		links = "http://tieba.baidu.com" + links;
 		// 获取所有贴吧html内容
 		content = http.get(links, cookie);
+		log.info("content = {}", content);
 		List<String> likesLink = getLike(content);
 		sign(likesLink, cookie, username);
 		log.warn("==============所有贴吧签到完成==============");
